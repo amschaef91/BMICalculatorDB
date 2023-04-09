@@ -137,14 +137,14 @@ const [weight, setWeight] = useState(null);
           <Pressable onPress={ () => {
             calculateBMI(weight, height, setText);
             }} style={styles.button}><Text style={styles.buttonText}>Compute BMI</Text></Pressable>
-            <Pressable onPress={() => 
+            {/*<Pressable onPress={() => 
               db.transaction(
                 (tx) => {
                   tx.executeSql('drop table results;'),
                   () => {setforceUpdate(!forceUpdate);}
                 }
               )} style={styles.button}><Text style={styles.buttonText}>Drop Table</Text>
-            </Pressable>
+            </Pressable> */}
           <TextInput
             style={styles.content}
             editable={false}
